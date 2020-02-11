@@ -9,11 +9,11 @@ if ! [[ -f GeoLite2-Country.mmdb.gz ]]; then
     exit 0
 fi
 
-if ! [[ -d KKnD ]]; then
+if ! [[ -d raplusmod ]]; then
     git clone https://github.com/MlemandPurrs/raplusmod
 fi
 
-cd KKnD
+cd raplusmod
 git stash
 patch -Np1 -i ../fetch-engine.patch
 
