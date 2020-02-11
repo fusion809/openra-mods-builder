@@ -14,6 +14,7 @@ if ! [[ -d raplusmod ]]; then
 fi
 
 cd raplusmod
+find . -name "*.sh" -exec chmod +x {} \;
 git stash
 patch -Np1 -i ../fetch-engine.patch
 
