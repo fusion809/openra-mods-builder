@@ -1,5 +1,5 @@
 # OpenRA mods builder
-This repository has scripts to make building unofficial mods of OpenRA that are no longer under active development or maintenance by their developers easier on Linux. 
+This repository has scripts to make building unofficial mods of OpenRA that are no longer under active development or maintenance by their developers easier on Linux. They build an AppImage and place it in this repository.
 
 Recently, MaxMind&mdash;which provided the GeoLite2-Country.mmdb.gz file for download&mdash;decided to only allow manual downloads of this file, not automatic, the later of which the build scripts of OpenRA's engine previously relied upon. The engine's build scripts have since been updated so that this file is no longer required, but many mods that have not received regular maintenance or development in a while are now impossible to build without some patching of the build scripts. This repository provides those patches and incorporates it into an automated build system of AppImages for these mods. You will need to manually download the GeoLite2-Country.mmdb.gz file from MaxMind, however, see https://dev.maxmind.com/geoip/geoip2/geolite2/ for further information.
 
@@ -38,4 +38,4 @@ Per the [compiling page at OpenRA's official repository](https://github.com/Open
 * unzip
 * xdg-utils
 
-Additionally the scripts themselves require bash's binary to be either present at /bin/bash or symlinked to it, and for patch and git to be within the system PATH. 
+Based on the Travis CI file of the OpenRA repository I would imagine genisoimage and fakeroot are also required to build the AppImage itself. Additionally the scripts themselves require bash's binary to be either present at /bin/bash or symlinked to it, and for patch and git to be within the system PATH. 
