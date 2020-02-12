@@ -24,3 +24,20 @@ Mods currently supported by this repository include:
 `commit`: is the hash of the latest commit of the mod that builds and runs successfully on Linux. 
 
 `commitno`: is the number of the aforementioned commit (e.g. if it is the first commit of the repo this number will be one, if it is the second commit it will be two, if it is the third commit it will be three, and so forth).
+
+Dependencies of these scripts
+------------------------------
+
+Per the [compiling page at OpenRA's official repository](https://github.com/OpenRA/OpenRA/wiki/Compiling) the following programs are required in order to build the game engine itself:
+
+* Mono
+* SDL 2
+* Lua 5.1
+* FreeType
+* Make
+* OpenAL
+* cURL or wget
+* unzip
+* xdg-utils
+
+Additionally the scripts themselves require bash's binary to be either present at /bin/bash or symlinked to it, and for patch and git to be within the system PATH. 
