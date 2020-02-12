@@ -21,7 +21,9 @@ Mods currently supported by this repository include:
 
 `name`: is the name of the GitHub repository of the mod.
 
-`commit`: is the hash of the latest commit of the mod that builds and runs successfully on Linux. 
+`commit`: is the hash of the latest commit of the mod that builds and runs successfully on Linux.
+
+For examples on its usage see the mod-specific scripts in this repository, as they use `build_mod.sh`. 
 
 Dependencies of these scripts
 ------------------------------
