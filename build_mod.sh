@@ -41,6 +41,7 @@ git stash
 if [[ -n ${commit_hash} ]]; then
     git checkout ${commit_hash}
 fi
+find . -name "*.sh" -exec chmod +x {} \;
 
 patch -Np1 -i ../patches/fetch-engine.patch
 
