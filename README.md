@@ -6,7 +6,7 @@ Recently, MaxMind&mdash;which provided the GeoLite2-Country.mmdb.gz file for dow
 Beware that some of these mods had their SDK last updated before the AppImages started to incorporate their own Mono runtime, and hence they may not run without a Mono runtime installed on your host machine. 
 
 Mods currently supported by this repository include:
-- [Krush Kill n' Destroy](https://github.com/IceReaper/KKnD) &mdash; build using `kknd.sh`.
-- [Medieval Warfare](https://github.com/CombinE88/Medieval-Warfare) &mdash; build using `mw.sh`. This script builds an older commit of this mod (namely commit number 258, hash: 3b9d21e), because the later commits do not build properly or their AppImages do not run. 
-- [Red Alert Plus](https://github.com/MlemandPurrs/raplusmod) &mdash; build using `raplus.sh`.
-- [Red Alert Unplugged](https://github.com/RAunplugged/uRA) &mdash; build using `ura.sh`. 
+- [Krush Kill n' Destroy](https://github.com/IceReaper/KKnD) &mdash; build using [`kknd.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/kknd.sh).
+- [Medieval Warfare](https://github.com/CombinE88/Medieval-Warfare) &mdash; build using [`mw.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/mw.sh). This script builds an older commit of this mod (namely commit number 258, hash: 3b9d21e), because the later commits do not build properly or their AppImages do not run. 
+- [Red Alert Plus](https://github.com/MlemandPurrs/raplusmod) &mdash; build using [`raplus.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/raplus.sh).
+- [Red Alert Unplugged](https://github.com/RAunplugged/uRA) &mdash; build using [`ura.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/ura.sh). 
