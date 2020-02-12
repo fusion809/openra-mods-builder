@@ -14,7 +14,7 @@ Mods currently supported by this repository include:
 [`build_mod.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/build_mod.sh) is a more generic mod builder. Usage is:
 
 ```bash
-./build_mod.sh owner name commit commitno
+./build_mod.sh owner name commit
 ```
 
 `owner`: is the owner of the GitHub repository of the mod.
@@ -22,8 +22,6 @@ Mods currently supported by this repository include:
 `name`: is the name of the GitHub repository of the mod.
 
 `commit`: is the hash of the latest commit of the mod that builds and runs successfully on Linux. 
-
-`commitno`: is the number of the aforementioned commit (e.g. if it is the first commit of the repo this number will be one, if it is the second commit it will be two, if it is the third commit it will be three, and so forth).
 
 Dependencies of these scripts
 ------------------------------

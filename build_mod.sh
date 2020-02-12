@@ -3,12 +3,11 @@ set -e
 
 if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     printf "Usage:\n\n"
-    printf "./build_mod.sh owner name commit commitno\n\n"
+    printf "./build_mod.sh owner name commit\n\n"
     printf "where owner is the owner of the GitHub repository of the mod.\n"
     printf "name is the name of said GitHub repository.\n"
     printf "commit is the commit we are building from. This argument is\n"
     printf "useful for when the latest commit has significant faults with it.\n"
-    printf "commitno is the number of the aforementioned commit.\n"
     exit 0
 fi
 
@@ -28,7 +27,7 @@ repo_name="$2"
 if [[ -n $3 ]]; then
     commit_hash="$3"
     commit_7hash=$(echo ${commit_hash} | head -c 7)
-    commit_number="$4"
+    commit_number=$(git -C ${repo_name} rev-list --count ${commit_hash})
 fi
 
 # Clone repo
@@ -52,7 +51,7 @@ fi
 make || (printf "The build of the mod failed.\n" && exit 0)
 
 cd packaging/linux
-if [[ -n ${commit_number} ]]; then
+if [[ -n ${commit_hash} ]]; then
     ./buildpackage.sh ${commit_number}.git.${commit_7hash} ../../../
 else
     ./buildpackage.sh $(git rev-list --branches $(git rev-parse --abbrev-ref HEAD) --count).git.$(git log | head -n 1 | cut -d ' ' -f 2 | head -c 7) ../../../
