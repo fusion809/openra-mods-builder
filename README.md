@@ -10,3 +10,14 @@ Mods currently supported by this repository include:
 - [Medieval Warfare](https://github.com/CombinE88/Medieval-Warfare) &mdash; build using [`mw.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/mw.sh). This script builds an older commit of this mod (namely commit number 258, hash: 3b9d21e), because the later commits do not build properly or their AppImages do not run. 
 - [Red Alert Plus](https://github.com/MlemandPurrs/raplusmod) &mdash; build using [`raplus.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/raplus.sh).
 - [Red Alert Unplugged](https://github.com/RAunplugged/uRA) &mdash; build using [`ura.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/ura.sh). 
+
+[`build_mod.sh`](https://github.com/fusion809/openra-mods-builder/blob/master/build_mod.sh) is a more generic mod builder. Usage is:
+
+```bash
+./build_mod.sh owner name commit commitno
+```
+
+`owner`: is the owner of the GitHub repository of the mod.
+`name`: is the name of the GitHub repository of the mod.
+`commit`: is the hash of the latest commit of the mod that builds and runs successfully on Linux. 
+`commitno`: is the number of the aforementioned commit (e.g. if it is the first commit of the repo this number will be one, if it is the second commit it will be two, if it is the third commit it will be three, and so forth).
