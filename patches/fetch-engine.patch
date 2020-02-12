@@ -6,7 +6,7 @@ index 1eab9b4..eaec73d 100755
  
  	echo "Compiling engine..."
  	cd "${ENGINE_DIRECTORY}" || exit 1
-+	patch Makefile < ../../Makefile.patch
++	patch Makefile < ../../patches/Makefile.patch
  	make version VERSION="${ENGINE_VERSION}"
  	exit 0
  fi

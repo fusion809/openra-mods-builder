@@ -42,7 +42,7 @@ if [[ -n ${commit_hash} ]]; then
     git checkout ${commit_hash}
 fi
 
-patch -Np1 -i ../fetch-engine.patch
+patch -Np1 -i ../patches/fetch-engine.patch
 
 if [[ -d engine ]]; then
     rm -rf engine

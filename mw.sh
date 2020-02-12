@@ -17,7 +17,7 @@ fi
 cd Medieval-Warfare
 git stash
 git checkout 3b9d21e50ad3f3f9979c6fd4922752f761a227f6
-patch -Np1 -i ../fetch-engine.patch
+patch -Np1 -i ../patches/fetch-engine.patch
 
 if [[ -d engine ]]; then
     rm -rf engine

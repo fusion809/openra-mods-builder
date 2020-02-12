@@ -16,7 +16,7 @@ fi
 
 cd uRA
 git stash
-patch -Np1 -i ../fetch-engine.patch
+patch -Np1 -i ../patches/fetch-engine.patch
 
 if [[ -d engine ]]; then
     rm -rf engine
@@ -24,5 +24,5 @@ fi
 
 make
 cd packaging/linux
-./buildpackage.sh $(git-comno).git.$(git-hash7) ../../../
+./buildpackage.sh $(git rev-list --branches $(git rev-parse --abbrev-ref HEAD) --count).git.$(git log | head -n 1 | cut -d ' ' -f 2 | head -c 7) ../../../
 cd ../../..
