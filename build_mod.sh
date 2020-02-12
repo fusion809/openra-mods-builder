@@ -1,5 +1,17 @@
 #!/bin/bash
 set -e
+
+if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
+    printf "Usage:\n\n"
+    printf "./build_mod.sh owner name commit commitno\n\n"
+    printf "where owner is the owner of the GitHub repository of the mod.\n"
+    printf "name is the name of said GitHub repository.\n"
+    printf "commit is the commit we are building from. This argument is\n"
+    printf "useful for when the latest commit has significant faults with it.\n"
+    printf "commitno is the number of the aforementioned commit.\n"
+    exit 0
+fi
+
 if ! [[ -f GeoLite2-Country.mmdb.gz ]]; then
     printf "You need to download GeoLite2-Country.mmdb.gz from MaxMind\n"
     printf "and place it in the top level of this repository in order for\n"
