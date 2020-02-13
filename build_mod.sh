@@ -39,20 +39,28 @@ fi
 
 cd "${repo_name}"
 
+# Stash any changes, including past patching
 git stash
+# Checkout a functional commit, if the latest is not
 if [[ -n ${commit_hash} ]]; then
     git checkout ${commit_hash}
 fi
+# Fix permissions on any shell scripts in the repo
 find . -name "*.sh" -exec chmod +x {} \;
 
+# Patch engine not to try to manually download GeoLite2-Country.mmdb.gz
 patch -Np1 -i ../patches/fetch-engine.patch
 
+# Remove the engine/ directory within the repo, so that it's downloaded
+# and built anew
 if [[ -d engine ]]; then
     rm -rf engine
 fi
 
+# Make mod
 make || (printf "The build of the mod failed.\n" && exit 0)
 
+# Build an AppImage 
 cd packaging/linux
 if [[ -n ${commit_hash} ]]; then
     ./buildpackage.sh ${commit_number}.git.${commit_7hash} ../../../
