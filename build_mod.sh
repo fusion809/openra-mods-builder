@@ -24,18 +24,20 @@ fi
 # Define variables
 repo_owner="$1"
 repo_name="$2"
+
+# Clone repo
+if ! [[ -d "${repo_name}" ]]; then
+    git clone https://github.com/${repo_owner}/${repo_name}
+fi
+
+# Set commit vars
 if [[ -n $3 ]]; then
     commit_hash="$3"
     commit_7hash=$(echo ${commit_hash} | head -c 7)
     commit_number=$(git -C ${repo_name} rev-list --count ${commit_hash})
 fi
 
-# Clone repo
-if ! [[ -d ${repo_name} ]]; then
-    git clone https://github.com/${repo_owner}/${repo_name}
-fi
-
-cd ${repo_name}
+cd "${repo_name}"
 
 git stash
 if [[ -n ${commit_hash} ]]; then
