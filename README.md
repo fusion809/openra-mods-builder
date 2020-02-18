@@ -41,3 +41,8 @@ Per the [compiling page at OpenRA's official repository](https://github.com/Open
 * xdg-utils
 
 Based on the Travis CI file of the OpenRA repository I would imagine genisoimage and fakeroot are also required to build the AppImage itself. Additionally the scripts themselves require bash's binary to be either present at /bin/bash or symlinked to it, and for patch and git to be within the system PATH. 
+
+Failed attempts
+----------------
+
+I did add a [Fanwars](https://github.com/Divadawm/Fanwars) [building script](https://github.com/fusion809/openra-mods-builder/blob/master/.fanwars.sh) to this repository but it failed to build due to factors outside my control and given [bug reports](https://github.com/Divadawm/Fanwars/issues) have been ignored by its maintainer in the past, I didn't see much point requesting a fix to this issue. To see the build error I received see [fanwars.log](https://github.com/fusion809/openra-mods-builder/blob/master/fanwars.log).

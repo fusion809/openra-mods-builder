@@ -1,0 +1,103 @@
+Cloning into 'Fanwars'...
+remote: Enumerating objects: 1176, done.
+remote: Counting objects: 100% (1176/1176), done.
+remote: Compressing objects: 100% (1161/1161), done.
+remote: Total 3331 (delta 18), reused 1094 (delta 12), pack-reused 2155
+Receiving objects: 100% (3331/3331), 48.97 MiB | 3.94 MiB/s, done.
+Resolving deltas: 100% (321/321), done.
+No local changes to save
+patching file fetch-engine.sh
+Hunk #1 succeeded at 71 (offset -1 lines).
+OpenRA engine version release-20191117 is required.
+Downloading engine...
+Compiling engine...
+patching file Makefile
+Hunk #1 succeeded at 191 (offset -123 lines).
+Hunk #2 FAILED at 511.
+1 out of 2 hunks FAILED -- saving rejects to file Makefile.rej
+make[1]: Entering directory '/data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine'
+make[1]: Leaving directory '/data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine'
+make[1]: Entering directory '/data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine'
+Fetching ICSharpCode.SharpZipLib from NuGet
+Fetching MaxMind.Db from NuGet
+Fetching NUnit from NuGet
+Fetching NUnit.Console from NuGet
+Fetching Open.Nat from NuGet
+Fetching FuzzyLogicLibrary from NuGet.
+Fetching SDL2-CS from GitHub.
+Fetching OpenAL-CS from GitHub.
+Fetching Eluant from GitHub.
+Fetching rix0rrr.BeaconLib from NuGet.
+  Restore completed in 233.11 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.PostProcess/OpenRA.PostProcess.csproj.
+  Restore completed in 13.22 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Mods.Cnc/OpenRA.Mods.Cnc.csproj.
+  Restore completed in 1.92 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Game/OpenRA.Game.csproj.
+  Restore completed in 2.61 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Utility/OpenRA.Utility.csproj.
+  Restore completed in 2.43 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Platforms.Default/OpenRA.Platforms.Default.csproj.
+  Restore completed in 2.28 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Server/OpenRA.Server.csproj.
+  Restore completed in 2.62 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Mods.D2k/OpenRA.Mods.D2k.csproj.
+  Restore completed in 2.33 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Mods.Common/OpenRA.Mods.Common.csproj.
+  Restore completed in 2.67 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Test/OpenRA.Test.csproj.
+Detected Lua 5.1 library at /lib/liblua.so.5.1.5
+Eluant.dll.config has been created successfully.
+make[1]: Leaving directory '/data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine'
+make[1]: Entering directory '/data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine'
+  OpenRA.PostProcess -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.PostProcess.exe
+  OpenRA.Game -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Game.exe
+  Post-processing /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Game.exe
+   - Enabling /LARGEADDRESSAWARE
+  OpenRA.Mods.Common -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/mods/common/OpenRA.Mods.Common.dll
+  OpenRA.Mods.Cnc -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/mods/common/OpenRA.Mods.Cnc.dll
+  OpenRA.Utility -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Utility.exe
+  Post-processing /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Utility.exe
+   - Enabling /LARGEADDRESSAWARE
+  OpenRA.Server -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Server.exe
+  Post-processing /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Server.exe
+   - Enabling /LARGEADDRESSAWARE
+  OpenRA.Mods.D2k -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/mods/d2k/OpenRA.Mods.D2k.dll
+  OpenRA.Platforms.Default -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Platforms.Default.dll
+  OpenRA.Test -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Test.dll
+make[1]: Leaving directory '/data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine'
+MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
+make: *** [Makefile:118: core] Error 1
+The build of the mod failed.
+Building core files
+Version changed to 7.git.8204984.
+Fetching ICSharpCode.SharpZipLib from NuGet
+Fetching MaxMind.Db from NuGet
+Fetching NUnit from NuGet
+Fetching NUnit.Console from NuGet
+Fetching Open.Nat from NuGet
+Fetching FuzzyLogicLibrary from NuGet.
+Fetching SDL2-CS from GitHub.
+Fetching OpenAL-CS from GitHub.
+^[[23~Fetching Eluant from GitHub.
+Fetching rix0rrr.BeaconLib from NuGet.
+  Restore completed in 251.68 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Mods.Cnc/OpenRA.Mods.Cnc.csproj.
+  Restore completed in 3.56 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.PostProcess/OpenRA.PostProcess.csproj.
+  Restore completed in 3.23 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Mods.D2k/OpenRA.Mods.D2k.csproj.
+  Restore completed in 3.44 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Mods.Common/OpenRA.Mods.Common.csproj.
+  Restore completed in 2.52 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Server/OpenRA.Server.csproj.
+  Restore completed in 2.09 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Game/OpenRA.Game.csproj.
+  Restore completed in 2.31 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Utility/OpenRA.Utility.csproj.
+  Restore completed in 2.34 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Platforms.Default/OpenRA.Platforms.Default.csproj.
+  Restore completed in 2.68 ms for /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Test/OpenRA.Test.csproj.
+  OpenRA.PostProcess -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.PostProcess.exe
+  OpenRA.Game -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Game.exe
+  Post-processing /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Game.exe
+   - Enabling /LARGEADDRESSAWARE
+  OpenRA.Mods.Common -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/mods/common/OpenRA.Mods.Common.dll
+  OpenRA.Mods.Cnc -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/mods/common/OpenRA.Mods.Cnc.dll
+  OpenRA.Utility -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Utility.exe
+  Post-processing /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Utility.exe
+   - Enabling /LARGEADDRESSAWARE
+  OpenRA.Server -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Server.exe
+  Post-processing /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Server.exe
+   - Enabling /LARGEADDRESSAWARE
+  OpenRA.Mods.D2k -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/mods/d2k/OpenRA.Mods.D2k.dll
+  OpenRA.Platforms.Default -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Platforms.Default.dll
+  OpenRA.Test -> /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/engine/OpenRA.Test.dll
+Installing OpenRA engine to /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/packaging/linux/Fractured Realms.appdir/usr/lib/openra
+Installing OpenRA common mod files to /data/GitHub/mine/packaging/openra-mods-builder/Fanwars/packaging/linux/Fractured Realms.appdir/usr/lib/openra
+Building mod files
+MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
+make: *** [Makefile:118: core] Error 1
